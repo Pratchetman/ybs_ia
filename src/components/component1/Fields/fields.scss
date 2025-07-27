@@ -1,0 +1,33 @@
+.btn {
+  align-self: end;
+  background-color: white;
+  border: 2px solid #282c34;
+  border-radius: 4px;
+  padding: 6px 20px;
+  color: #00437a;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #0093aa;
+  color: white;
+  border: 2px solid #282c34;
+}
+/* Estilo para el header activo */
+.accordion-button:not(.collapsed) {
+  background-color: #0093aa6c;
+  font-weight: 600; /* Cambia este color al que quieras */
+  //color: white; /* Opcional, para texto visible */
+}
+
+
+.accordion-button:focus,
+.accordion-button:active {
+  outline: none; /* Quita el outline por defecto */
+  box-shadow: 0 0 0 0.25rem #0093aa; /* Cambia el color y tamaño */
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem #0093aa6c; /* rojo */
+  border-color: #0093aa;
+}

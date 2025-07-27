@@ -1,5 +1,30 @@
-.stage{
-    text-align: start;
-    margin-top: 40px;
-    width: 100%;
+.stage {
+  text-align: start;
+  margin-top: 40px;
+  width: 100% !important;
+  .fondoPatron {
+    background: linear-gradient(to bottom right, #00437a, #012b4e);
+    padding: 10px 20px !important;
+    border-radius: 8px;
+    color: white;
+    h5 {
+      text-shadow: 1px 1px black;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stage {
+    > div {
+        gap: 10px;
+      h2 {
+        font-size: 16px;
+        margin-bottom: 0px;
+      }
+    }
+  }
 }
