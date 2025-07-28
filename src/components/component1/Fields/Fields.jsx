@@ -37,7 +37,7 @@ export const Fields = ({ app, stage }) => {
     setLoading(true);
     setShow(true);
     try {
-      const response = await axios.post("http://alb-YBS-2070023914.eu-west-3.elb.amazonaws.com/pdf/ybs/fases", {
+      const response = await axios.post("https://ybs.arrabal-api.org/pdf/ybs/fases", {
         replacedTemplate,
         headers: {
           "Content-Type": "text/plain", // porque envías un string simple

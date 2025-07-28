@@ -32,7 +32,7 @@ export const ModalIA = ({
         return;
       }
       const response = await axios.post(
-        "http://alb-YBS-2070023914.eu-west-3.elb.amazonaws.com/pdf/ybs/fases/pdf",
+        "http://ybs.arrabal-api.org/pdf/ybs/fases/pdf",
         {
           pdfRichText: iaMessage.choices[0]?.message.content,
           stage: stage.id +"." + app.id + "." + app.name

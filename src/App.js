@@ -9,59 +9,9 @@ import "react-toastify/dist/ReactToastify.css";
 import { Componente1 } from "./components/component1/Componente1";
 import { Footer } from "./components/component1/Footer/Footer";
 function App() {
-  const [message, setMessage] = useState(null);
   const [stages, setStages] = useState(fases);
   const [selectedStage, setSelectedStage] = useState(10);
 
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-
-  //   if (name === "importe") {
-  //     // Solo permitir números y punto decimal
-  //     const regex = /^[0-9]*\.?[0-9]*$/;
-  //     if (value === "" || regex.test(value)) {
-  //       setPlan((prevPlan) => ({
-  //         ...prevPlan,
-  //         importe: value,
-  //       }));
-  //     }
-  //   } else {
-  //     setPlan((prevPlan) => ({
-  //       ...prevPlan,
-  //       [name]: value,
-  //     }));
-  //   }
-  // };
-
-  // const handleSubmit = async () => {
-  //   setLoading(true);
-  //   try {
-  //     const response = await fetch("http://localhost:8080/pdf/plan", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         tipoNegocio: plan.tipoNegocio,
-  //         importe: Number(plan.importe),
-  //       }),
-  //     });
-
-  //     if (!response.ok) {
-  //       throw new Error("Error en el envío");
-  //     }
-
-  //     const data = await response.json();
-  //     console.log("Respuesta del servidor:", data);
-  //     setMessage(data);
-
-  //     setLoading(false);
-  //   } catch (error) {
-  //     console.error("Error:", error);
-  //     setMessage("La API gratis no da para más");
-  //     setLoading(false);
-  //   }
-  // };
 
   return (
     <div className="App">
