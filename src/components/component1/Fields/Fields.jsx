@@ -23,6 +23,7 @@ export const Fields = ({ app, stage }) => {
   };
 
   const handleSubmit = async () => {
+    setLoading(true);
     // Validar que todos los campos tienen valor
     const emptyFields = app.fields.filter((field) => !form[field.name]?.trim());
     if (emptyFields.length > 0) {
@@ -34,10 +35,12 @@ export const Fields = ({ app, stage }) => {
       return form[key.trim()] ?? "";
     });
     setPrompt(replacedTemplate);
-    setLoading(true);
+    
     setShow(true);
     try {
-      const response = await axios.post("https://ybs.arrabal-api.org/pdf/ybs/fases", {
+      const response = await axios.post(
+        "https://ybs.arrabal-api.org/pdf/ybs/fases",
+        {
         replacedTemplate,
         headers: {
           "Content-Type": "text/plain", // porque envías un string simple
